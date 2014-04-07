@@ -1,0 +1,9 @@
+package b;
+
+import "a.proto";
+
+message b_message
+{
+    optional a.a_enum val = 1;
+}
+

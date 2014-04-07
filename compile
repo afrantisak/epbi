@@ -1,0 +1,9 @@
+#!/usr/bin/env escript
+%% -*- erlang -*-
+%%! -pa deps/erlang_protobuffs/ebin/
+
+main(_) ->
+    protobuffs_compile:generate_source("a.proto"),
+    protobuffs_compile:generate_source("b.proto").
+
+    

@@ -1,0 +1,13 @@
+package a;
+
+enum a_enum
+{
+    one = 1;
+    two = 2;
+}
+
+message a_message
+{
+    optional string x = 1;
+}
+
