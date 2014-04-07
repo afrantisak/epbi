@@ -3,7 +3,9 @@
 %%! -pa deps/erlang_protobuffs/ebin/
 
 main(_) ->
-    protobuffs_compile:generate_source("a.proto"),
-    protobuffs_compile:generate_source("b.proto").
+    %Opts = [{output_ebin_dir, "ebin"}, {output_include_dir, "include"}, {imports_dir, ["src"]}, {output_src_dir, "src"}],
+    Opts = [],
+    protobuffs_compile:generate_source("a.proto", Opts),
+    protobuffs_compile:generate_source("b.proto", Opts).
 
     

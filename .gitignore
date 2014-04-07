@@ -1,3 +1,6 @@
 *~
 deps/
 ebin/
+*.beam
+*_pb.erl
+*_pb.hrl
